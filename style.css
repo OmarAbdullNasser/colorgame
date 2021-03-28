@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+body{
+background-color: black;
+}
+.container-fluid{
+  padding: 0;
+  margin: 0;
+  font-family: Pro;
+}
+.header{
+  background-color: #4682b4;
+  display: flex;
+  flex-flow: column;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+}
+.header h4{
+font-size: 30px;
+margin: 10px;
+padding: 10px;
+margin-bottom: 0;
+}
+
+.header h1{
+  font-size: 60px;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.header h3{
+  margin: 5px;
+  padding-bottom: 10px;
+}
+
+
+.Contaler{
+  color: white;
+  height: 45px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly ;
+
+}
+
+.new{
+  color: steelblue;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding:3px;
+  font-size: 20px;
+ text-transform: uppercase;
+ text-align: center;
+ transition: background-color 0.5s;
+ font-weight: 800;
+ 
+
+}
+.new:hover{
+  color:white;
+  background-color:steelblue ;
+}
+
+.easy,.hard{
+  color: steelblue;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding:7px;
+  font-size: 20px;
+  text-align: center;
+ text-transform: uppercase;
+ transition: background-color 0.5s;
+  font-weight: 800;
+  flex-shrink: 3;
+
+}
+
+.easy{
+  position: relative;
+  left: 18%;
+}
+
+
+
+.game
+    {
+    margin: 25px auto;
+   max-width: 700px;
+   overflow: auto;
+      }
+.box{
+  float: left;
+  padding-bottom: 30%;
+  margin: calc(10% / 6);
+  width: 30%;
+  background-color: white;
+  transition: background-color 0.75s;
+  border-radius: 15px;
+  animation: hidden 0.5s ease-in-out alternate ;
+}
+
+@keyframes hidden {
+  from{
+    visibility: visible;
+  }
+  to{
+    visibility: hidden;
+  }
+}
+
+
+.state{
+color: black;
+position: absolute;
+left: 50%;
+top: 35%;
+ transform: translate(-30%, -30%);
+font-size: 20px;
+font-weight: lighter;
+visibility: hidden;
+}
+
+.active{
+  color:white;
+  background-color:steelblue ;
+}
+
+.three{
+  visibility: hidden;
+}
+
+.hiden{
+  display: none;
+}
